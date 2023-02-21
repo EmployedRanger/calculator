@@ -144,8 +144,8 @@ body {
 }
 
 @font-face {
-  font-family: 'Calculator.ttf';
-  src: url('/calculator-font/Calculator.ttf') format('truetype');
+  font-family: 'Calculator';
+  src: url('calculator-font/Calculator.ttf') format('truetype');
 }
 
 .footer {
@@ -153,7 +153,7 @@ body {
   color: whitesmoke;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 15px;;
+  padding-bottom: 15px;
   font-size: 16px;
   height: 15px;
   width: 100%;

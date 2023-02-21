@@ -1,11 +1,12 @@
 Calculator
 
-This is a simple calculator application built using HTML, CSS, and JavaScript. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This is a simple calculator application built using HTML, CSS, and JavaScript. It allows users to perform basic operations such as addition, subtraction, multiplication, and division.
 Installation
 
     Clone this repository to your local machine using the command git clone https://github.com/your-username/calculator.git.
     Navigate to the project directory using cd calculator.
     Open the index.html file in your web browser.
+    (Chrome works best, but firefox will do)
 
 Usage
 
@@ -17,7 +18,7 @@ Usage
 
 Features
 
-    Basic arithmetic operations: addition, subtraction, multiplication, and division.
+    Basic math operations: addition, subtraction, multiplication, and division.
     Sign flip button to change the sign of the current number.
     Clear button to clear the input fields.
     Clear history button to clear the history of calculations.
