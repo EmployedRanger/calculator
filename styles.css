@@ -138,26 +138,26 @@ body {
 
 .little-numbers,
 .big-numbers {
-    color: whitesmoke;
-    text-align: right;
-
+  color: whitesmoke;
+  text-align: right;
+  font-family: 'calculator';
 }
 
 @font-face {
-    font-family: calculator;
-    src: url(/calculator-font/Calculator.ttf);
+  font-family: calculator;
+  src: url('/calculator-font/Calculator.ttf') format('truetype');
 }
 
 .footer {
-    background-color: #111;
-    color: whitesmoke;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;;
-    font-size: 16px;
-    height: 15px;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
+  background-color: #111;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;;
+  font-size: 16px;
+  height: 15px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 
 }

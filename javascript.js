@@ -15,11 +15,8 @@ buttonsBox.addEventListener('click', (event) => {
         // Assigns button click
         const button = event.target;
 
-        console.log(`Button ${button.dataset.value} was clicked`);
-
         if (button.classList.contains('number')) {
             currentNumber += button.dataset.value;
-            console.log('number was ' + currentNumber);
             updateDisplay(pastNumber, currentNumber, currentOperator);
         }
 
@@ -56,14 +53,15 @@ buttonsBox.addEventListener('click', (event) => {
 
         else if (button.classList.contains('equals')) {
             let result = operate(pastNumber, currentNumber, currentOperator);
-            currentNumber = Number(result).toFixed(2).replace(/[.,]00$/, "");
-            pastNumber = '';
-            currentOperator = '';
-            updateDisplay(pastNumber, currentNumber, currentOperator);
-            result = currentNumber;
+            if (Number.isFinite(result)) {
+                currentNumber = Number(result).toFixed(2).replace(/[.,]00$/, "");
+                pastNumber = '';
+                currentOperator = '';
+                updateDisplay(pastNumber, currentNumber, currentOperator);
+                result = currentNumber;
+            } else {result = 'lol';}
+            bigNumbers.innerHTML = result;
             smallNumbers.innerHTML = result;
-            console.log('currentNumber is: ' + currentNumber);
-            console.log('pastNumber is: ' + pastNumber);
         }
     }
 });
@@ -98,8 +96,9 @@ function multiply (a, b) {
 }
 
 function divide (a, b) {
-    if (a === 0) {
-        return '101';
+    if (b === 0) {
+        bigNumbers.innerHTML = 'lol';
+        return 'lol';
     }
     return a / b;
 }
@@ -124,6 +123,4 @@ function clear () {
 
 function updateDisplay (pastNumber, currentNumber, currentOperator) {
     bigNumbers.innerHTML = pastNumber + ' ' + currentOperator + ' ' + currentNumber;
-    // bigNumbers.innerHTML = currentNumber ? pastNumber : '00000000';
-    // smallNumbers.innerHTML = pastNumber;
 }
