@@ -6,7 +6,6 @@ let operator = '';
 let currentOperator = '';
 
 const buttonsBox = document.querySelector('.buttons-box');
-console.log(buttonsBox);
 const buttonsArray = Array.from(buttonsBox);
 
 

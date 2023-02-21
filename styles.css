@@ -14,7 +14,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     margin: 3px;
-    width: 78px;
+    width: 77px;
     height: 60px;
     font-size: 18px;
     text-align: center;
@@ -144,8 +144,8 @@ body {
 }
 
 @font-face {
-  font-family: calculator;
-  src: url('/calculator-font/Calculator.ttf') format('truetype');
+  font-family: 'calculator';
+  src: local('/calculator-font/Calculator.ttf') format('truetype');
 }
 
 .footer {

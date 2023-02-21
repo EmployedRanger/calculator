@@ -1,0 +1,41 @@
+[33mcommit 45ea7984e31e93c2a89a66abf7c6ccc81c22a4c8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 20:30:28 2023 -0700
+
+    Fixed divide by zero
+
+[33mcommit c6955d077ebb63091928caee54b9de52095320fc[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 20:06:30 2023 -0700
+
+    Wrote README.md instructions
+
+[33mcommit e2395fbc86d7f608d270da2908397c38bc6067b3[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 20:04:10 2023 -0700
+
+    Calculator works as intended now
+
+[33mcommit b44294c4b836884d19e3e9b7e2e0bbe9b158f7db[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 02:20:33 2023 -0700
+
+    Updated UI and fixed colors
+
+[33mcommit 295bb75e1cad80dc22779cd8371fef3dbd66b5bb[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 00:49:57 2023 -0700
+
+    Created basic layout
+
+[33mcommit 0e0adfebed8168370fe4b0013bf9d668d392e442[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Mon Feb 20 00:18:11 2023 -0700
+
+    Created HTML layout & added button styles
+
+[33mcommit 2ba2c5df29125d42d91c2f34b7af6b9f65c00617[m
+Author: EmployedRanger <119915465+EmployedRanger@users.noreply.github.com>
+Date:   Sun Feb 19 23:51:48 2023 -0700
+
+    Initial commit
