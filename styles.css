@@ -140,12 +140,12 @@ body {
 .big-numbers {
   color: whitesmoke;
   text-align: right;
-  font-family: 'calculator';
+  font-family: 'Calculator';
 }
 
 @font-face {
-  font-family: 'calculator';
-  src: local('/calculator-font/Calculator.ttf') format('truetype');
+  font-family: 'Calculator.ttf';
+  src: url('/calculator-font/Calculator.ttf') format('truetype');
 }
 
 .footer {
