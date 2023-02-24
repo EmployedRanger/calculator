@@ -3,7 +3,8 @@ Calculator
 This is a simple calculator application built using HTML, CSS, and JavaScript. It allows users to perform basic operations such as addition, subtraction, multiplication, and division.
 Installation
 
-    Clone this repository to your local machine, or not. I don't really care https://github.com/your-username/calculator.git.
+    Clone this repository to your local machine, or not. I don't really care.
+    https://github.com/EmployedRanger/calculator
     Navigate to the project directory using cd calculator.
     Open the index.html file in your web browser.
     (Chrome works best, but firefox will do)

@@ -171,10 +171,10 @@ const keyMap = {
   };
 
   document.addEventListener('keydown', (event) => {
-    const keyCode = event.keyCode.toString();
-    if(keyMap[keyCode]) {
+    const keyPad = event.keyCode.toString();
+    if(keyMap[keyPad]) {
         event.preventDefault();
-        const button = document.getElementsByClassName(keyMap[keyCode])[0];
+        const button = document.getElementsByClassName(keyMap[keyPad])[0];
         button.click();
     }
   });
