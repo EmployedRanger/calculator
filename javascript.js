@@ -35,13 +35,14 @@ buttonsBox.addEventListener('click', (event) => {
 
         else if (button.classList.contains('operator')) {
             if (pastNumber && currentNumber !== '' && !button.classList.contains('equals')) {
-                operate(pastNumber, currentNumber, currentOperator);
-                pastNumber = currentNumber;
+                smallNumbers.innerHTML = pastNumber + ' ' + currentOperator + ' ' + currentNumber;
+                pastNumber = operate(pastNumber, currentNumber, currentOperator);
                 currentNumber = '';
                 currentOperator = button.dataset.value;
                 console.log('operator');
                 updateDisplay(pastNumber, currentNumber, currentOperator)
-                smallNumbers.innerHTML = currentNumber;
+                // smallNumbers.innerHTML = currentNumber;
+
             } else {
                 pastNumber = currentNumber;
                 currentNumber = '';
