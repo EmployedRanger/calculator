@@ -15,6 +15,13 @@ buttonsBox.addEventListener('click', (event) => {
         const button = event.target;
 
         if (button.classList.contains('number')) {
+            if (button.dataset.value === '.' && currentNumber.includes('.'))
+            {
+                return; // returns if there is already a period
+            }
+            if (currentNumber === 'lol') {
+                currentNumber = 0;
+            }
             currentNumber += button.dataset.value;
             updateDisplay(pastNumber, currentNumber, currentOperator);
         }
@@ -41,7 +48,6 @@ buttonsBox.addEventListener('click', (event) => {
                 currentOperator = button.dataset.value;
                 console.log('operator');
                 updateDisplay(pastNumber, currentNumber, currentOperator)
-                // smallNumbers.innerHTML = currentNumber;
 
             } else {
                 pastNumber = currentNumber;
@@ -60,7 +66,10 @@ buttonsBox.addEventListener('click', (event) => {
                 updateDisplay(pastNumber, currentNumber, currentOperator);
                 result = currentNumber;
             } else {result = 'lol';}
-            bigNumbers.innerHTML = result;
+            currentNumber = result;
+            pastNumber = '';
+            currentOperator = '';
+            updateDisplay(pastNumber, currentNumber, currentOperator);
             smallNumbers.innerHTML = result;
         }
     }
@@ -122,5 +131,50 @@ function clear () {
 }
 
 function updateDisplay (pastNumber, currentNumber, currentOperator) {
-    bigNumbers.innerHTML = pastNumber + ' ' + currentOperator + ' ' + currentNumber;
+    const maxLength = 12;
+    let displayString = pastNumber + ' ' + currentOperator + ' ' + currentNumber;
+    if (displayString.length > maxLength) {
+        displayString = 'ERROR';
+        smallNumbers.innerHTML = displayString;
+    }
+    bigNumbers.innerHTML = displayString;
 }
+
+const keyMap = {
+    '48': 'zero',
+    '49': 'one',
+    '50': 'two',
+    '51': 'three',
+    '52': 'four',
+    '53': 'five',
+    '54': 'six',
+    '55': 'seven',
+    '56': 'eight',
+    '57': 'nine',
+    '96': 'zero',
+    '97': 'one',
+    '98': 'two',
+    '99': 'three',
+    '100': 'four',
+    '101': 'five',
+    '102': 'six',
+    '103': 'seven',
+    '104': 'eight',
+    '105': 'nine',
+    '106': 'multiply',
+    '107': 'plus',
+    '109': 'subtract',
+    '110': 'decimal',
+    '111': 'divide',
+    '13': 'equals',
+    '46': 'clear',
+  };
+
+  document.addEventListener('keydown', (event) => {
+    const keyCode = event.keyCode.toString();
+    if(keyMap[keyCode]) {
+        event.preventDefault();
+        const button = document.getElementsByClassName(keyMap[keyCode])[0];
+        button.click();
+    }
+  });
