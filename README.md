@@ -24,3 +24,7 @@ Features
     Clear button to clear the input fields.
     Clear history button to clear the history of calculations.
     Responsive design for different screen sizes.
+
+Fixes:
+- 1/6= .17. Then times that by 6 gives 1.02. It should round to 6 instead.
+- It concatenates the new number you press after doing an equation. So when I do 2+3, end up with 5, press number three; it will show 53

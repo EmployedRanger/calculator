@@ -19,6 +19,12 @@ buttonsBox.addEventListener('click', (event) => {
             {
                 return; // returns if there is already a period
             }
+            if (currentNumber !== '') {
+                operate(pastNumber, currentNumber, currentOperator);
+                pastNumber = '';
+                currentNumber = '';
+                updateDisplay(pastNumber, currentNumber, currentOperator);
+            }
             if (currentNumber === 'lol') {
                 currentNumber = 0;
             }
@@ -47,7 +53,7 @@ buttonsBox.addEventListener('click', (event) => {
                 currentNumber = '';
                 currentOperator = button.dataset.value;
                 console.log('operator');
-                updateDisplay(pastNumber, currentNumber, currentOperator)
+                updateDisplay(pastNumber, currentNumber, currentOperator);
 
             } else {
                 pastNumber = currentNumber;
